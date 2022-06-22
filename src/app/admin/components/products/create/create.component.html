@@ -1,0 +1,17 @@
+
+  <mat-form-field appearance="fill" class="input-mrgn">
+    <mat-label>Name</mat-label>
+    <input matInput #txtName>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="input-mrgn">
+    <mat-label>Stock</mat-label>
+    <input matInput #txtStock type="number" min="0" value="0">
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="input-mrgn">
+    <mat-label>Price</mat-label>
+    <input matInput #txtPrice type="number" min="0" value="0">
+  </mat-form-field>
+    <div class="div-btn">
+        <button mat-raised-button (click)="create(txtName,txtStock,txtPrice)" color="accent">Submit</button>
+    </div>
+
